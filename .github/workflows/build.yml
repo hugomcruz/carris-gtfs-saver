@@ -5,9 +5,9 @@ on:
   
 env:
   REGISTRY: harbor.bnov.net
-  PROJECT: carris
+  PROJECT: carris-public
   APP_NAME: carris-gtfs-saver
-  FULL_IMAGE: harbor.bnov.net/carris/carris-gtfs-saver
+  FULL_IMAGE: harbor.bnov.net/carris-public/carris-gtfs-saver
 
 jobs:
   build:
