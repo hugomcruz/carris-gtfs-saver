@@ -1,0 +1,13 @@
+# Docker Compose for Carris GTFS Saver
+
+services:
+  carris-gtfs-saver:
+    build: .
+    environment:
+      - S3_ENDPOINT_URL=${S3_ENDPOINT_URL}
+      - S3_ACCESS_KEY_ID=${S3_ACCESS_KEY_ID}
+      - S3_SECRET_ACCESS_KEY=${S3_SECRET_ACCESS_KEY}
+      - S3_BUCKET_NAME=${S3_BUCKET_NAME}
+      - S3_REGION=${S3_REGION}
+    env_file:
+      - .env
